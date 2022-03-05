@@ -27,7 +27,6 @@ namespace dictionary
             usersDictionary.Add(3, "fsdfa gs");
             usersDictionary.Add(7, "Ziyfsdgsnet fdsgfsad");
             usersDictionary.Add(5, "fdsgasd dgfsdgf");
-
             Console.WriteLine("Dictionary ile");
             foreach (KeyValuePair<int,string> user in usersDictionary)
             {
@@ -40,19 +39,16 @@ namespace dictionary
             {
                 Console.WriteLine("Id:" + user.Key + "\t" + "Adı Soyadı:" + user.Value);
             }
-
             Console.WriteLine("");
             Console.WriteLine("FirstExample");    
             Dictionary<int, string> users = new Dictionary<int, string>();
             //diğer listelerde olduğu gibi Add() metodu ile ekleme yaypıyoruz.
-
             users.Add(5, "Özcan Öner");
             users.Add(8, "Serkan Karadeniz");
             users.Add(6, "Engin Demirog");
             users.Add(10, "Cristiano Ronaldo");
             users.Add(7, "Ricardo Quaresma");
             users.Add(9, "Muhammed Tayyib Şahin");
-
             //diğer listelerden farklı yazdırma işlemi 
             //keyvaluepair dictionary'deki anahtarımız.
             //ve dictionarydeki value  değer tipimiz ne ise onlarıda aynen yazıyoruz.
@@ -63,11 +59,9 @@ namespace dictionary
             }
             //Dictionary key uniqtir yani benzersiz. Aynı değerler gelirse hata vericektir.
             //peki bunu nasıl önlüyoruz.
-
             string newUser = "Muhammed Tayyib Şahin";
             bool varMi = users.TryGetValue(9, out newUser);
             //varsa true yoksa false dönderecek.
-
             if (varMi)
             {
                 Console.WriteLine("böyle bir kayıt Mevcut!");
@@ -77,12 +71,6 @@ namespace dictionary
                 users.Add(9, newUser);
                 Console.WriteLine("kayıt eklendi");
             }
-
-
-
-
-
-
         }
     }
 }
