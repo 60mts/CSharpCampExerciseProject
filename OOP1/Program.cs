@@ -1,0 +1,1 @@
+﻿List<string> isimler = new List<string>() {"Özcan Öner", "Murat Duyum", "Onurcan atar" };
