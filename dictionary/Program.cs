@@ -51,7 +51,7 @@ namespace dictionary
             users.Add(9, "Muhammed Tayyib Şahin");
             //diğer listelerden farklı yazdırma işlemi 
             //keyvaluepair dictionary'deki anahtarımız.
-            //ve dictionarydeki value  değer tipimiz ne ise onlarıda aynen yazıyoruz.
+            //ve dictionarydeki value  değer   tipimiz ne ise onlarıda aynen yazıyoruz.
             foreach (var user in users)
             {
 
